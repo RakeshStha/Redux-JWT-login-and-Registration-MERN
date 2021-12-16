@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://rakesh:rakesh@authentication.c3oy0.mongodb.net/Authentication?retryWrites=true&w=majority",
+    "secretOrKey": "23ghFgg32ssddsds"
+}
