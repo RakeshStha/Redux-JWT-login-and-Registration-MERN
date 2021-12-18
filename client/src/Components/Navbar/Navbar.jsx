@@ -31,6 +31,14 @@ class Navbar extends Component {
               </li> */}
               <li class="nav-item">
                 <Link
+                  className="nav-link btn btn-contact button-outline-none"
+                  to="/contact"
+                >
+                  Contact Us
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link
                   className="nav-link btn btn-login button-outline-none"
                   to="/login"
                 >

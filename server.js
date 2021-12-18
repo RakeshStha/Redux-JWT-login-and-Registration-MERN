@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const passport = require("passport");
 const usersRouter = require("./routes/api/users");
+const contactRouter = require("./routes/api/contact");
 const config = require('config');
 const app = express();
 // Body parser middleware
@@ -29,6 +30,8 @@ app.use(passport.initialize());
 require("./config/passport")(passport);
 // Routes
 app.use("/api/users", usersRouter);
+
+app.use("/api/user_contact", contactRouter);
 
 /* //Serve static assets if in production
 if (process.env.NODE_ENV = "production") {
